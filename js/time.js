@@ -11,7 +11,7 @@ else if (thehour < 17 ) {
 	$('#greeting').css('color', '#f3819a');
 	$('.dailyk a').css('color', '#f3819a');
 }
-else if (thehour < 23) {
+else if (thehour <= 24) {
 	$('#greeting').prepend('<span>こんばんは</span>');
 	$('#greeting').css('color', '#83cace');
 	$('.dailyk a').css('color', '#83cace');

@@ -1,4 +1,14 @@
-﻿#main {
+@font-face {
+  src:url(../fonts/proximanova.ttf);
+  font-family:'proxima nova';
+}
+
+@font-face {
+  src:url(../fonts/productsans.ttf);
+  font-family:'product sans';
+}
+
+#main {
   width:915px;
   max-width:83%;
   margin:auto;
@@ -6,6 +16,7 @@
 }
 body {
   background:#2a2a2a;
+  font-family:'proxima nova';
 }
 LI.rss_item {
   list-style-type:none;
@@ -17,6 +28,7 @@ LI.rss_item {
   background-image:url(../images/boards.png);
   background-size:100%;
   height:189px;
+  cursor: pointer;
 }
 .boards ul li {
   display:inline;
@@ -30,7 +42,12 @@ LI.rss_item {
   margin:0;
   text-shadow:1px 1px #000;
   padding:0;
+  transition: all 0.4s;
   text-align:center;
+}
+.boards ul li a:hover {
+  color:#f17788 !important;
+  transition: all 0.4s;
 }
 ul.rss-items,  ul.rss-items a {
   list-style-type:none;
@@ -51,6 +68,10 @@ a {
   margin-top:5%;
   padding-bottom:0;
   margin-bottom:-8%;
+}
+#search input {
+  font-family: 'product sans';
+  padding:5px;
 }
 ::-moz-placeholder {
   color:#fff;  

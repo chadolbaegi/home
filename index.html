@@ -1,0 +1,42 @@
+<html>
+ <head>
+  <title>Welcome</title>
+  <link rel="stylesheet" type="text/css" href="homep.css" />
+ </head>
+ <body>
+  <div id="contain">
+   <p class="h1">Description</p>
+   <p class="para">"home" is a startpage that uses images as opposed to text links to bookmarked websites. The one set up can be modified to include other sites (and banners). It comes with a script for the date and a greeting that varies based on the time of day, as well as a kanji of the day.</p>
+
+   <p class="h1">Installation</p>
+   <p class="para">Download the .zip and extract it, then set it as your custom home page (start page and/or new tab page). In Firefox, this can be done in about:config or by going to tools > options.</p>
+   <div id="dlbutt">
+    <a href="https://github.com/hicalcium/home/tree/master">download</a>
+   </div>
+
+   <p class="h1">Editing</p>
+   <p class="para">In order to add/remove sites, you'll have to edit <span class="code">index.html</span>. The format for each site/slide is:</p>
+   <xmp><li><a href="URL" target="_blank"><img src="images/IMAGE.png" /></a></li></xmp>
+
+   <p class="para">To edit the carousel/slideshow, edit <span class="code">jquery.flexslider.js</span> in /js.</p>
+
+   <p class="para">To edit the colors, edit <span class="code">stylesheet.css</span> in the css/stylesheets folder.</p>
+
+   <p class="para">To edit the times of day that the greeting changes at/to change the color of the greeting, etc., edit <span class="code">time.js</span> in the scripts folder.</p>
+
+   <p class="h1">Preview</p>
+   <p class="para"><a href="http://hicalcium.github.io/home/index/index.html" class="preview">live demo</a></p>
+   <p class="para">click image for other times of day</p>
+   <p class="para" id="previmgcontain"><img src="morning.png" id="previmg" class="morning"/></p>
+
+   <p class="h1"></p>
+   <p class="para"></p>
+   <div id="mascot">
+    <img class="mascot" />
+   </div>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+  <script src="script.js"></script>
+ </body>
+</html>

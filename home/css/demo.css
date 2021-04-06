@@ -72,15 +72,21 @@ a {
 #search input {
   font-family: 'product sans';
   padding:5px;
+  outline:2px solid #303030;
+}
+#search input:focus {
+  outline:2px solid #606060;
+  transition:300ms;
 }
 ::-moz-placeholder {
-  color:#fff;  
+  color:#fff;
 }
 .normal {
   color:#cccccc;
 }
 #greeting {
   color:#cccccc;
+  width:100%;
   padding-left:5%;
 }
 body {
@@ -99,13 +105,13 @@ DIV.flex-viewport, .flexslider, section, .flexslider.carousel, .slider {
   color:#1b1b1b !important;
 }
 .flex-control-paging li a {
-  background: #5f5f5f !important; 
+  background: #5f5f5f !important;
   box-shadow:none !important;
 }
-.flex-control-paging li a.flex-active { 
+.flex-control-paging li a.flex-active {
   background: #3c3c3c !important;
-  background: rgba(0,0,0,0.9); 
-  cursor: default; 
+  background: rgba(0,0,0,0.9);
+  cursor: default;
 }
 .flex-direction-nav a:before {
   content:" " !important;
